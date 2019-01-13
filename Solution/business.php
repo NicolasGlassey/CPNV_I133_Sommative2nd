@@ -4,8 +4,8 @@
  * Project  : Diagnostic2nd
  * Created  : 10.01.2019 - 18:41
  *
- * Last update :    [01.12.2018 author]
- *                  [add $logName in function setFullPath]
+ * Last update :    13-JAN-2019 - nicolas.glassey@gmail.com
+ *                  Add evaluation rules
  * Git source  :    [link]
  */
 
@@ -19,13 +19,20 @@ $arrayData = array(
 
 $GUITitle = "Satellite Second Generation (MSG)";//titre de la page et du tableau
 $GUIThead = generateGUIThead($arrayTH);//entête du tableau
-$GUITbody = generateGUITbody($arrayData);//
+$GUITbody = generateGUITbody($arrayData);//contenu du tableau
 
 function generateGUIThead($arrayTH)
 {
     $tempGUIThead = "";
 
     //result expected = //'<th>SATELLITE</th><th>LIFETIME</th><th>POSITION</th> <th>SERVICE</th><th>CONTACT</th><th>EDIT</th><th>DELETE</th>';
+
+    //Evaluation
+    //1pt pour l'utilisation correct du foreach
+    //1pt pour avoir utilisé la variable temporaire $tempGUIThead
+    //1pt construction correct de la liste de th
+    //-1pt pour l'utilisation d'un for au lieu du foreach
+
     foreach ($arrayTH as $th) {
         $tempGUIThead = $tempGUIThead . '<th>' . $th . '</th>';
     }
@@ -35,6 +42,14 @@ function generateGUIThead($arrayTH)
 function generateGUITbody($arrayData)
 {
     $tempGUITbody = "";
+
+    //Evaluation
+    //1pt pour l'utilisation correct du foreach
+    //1pt pour l'ajout du checkbox avant la deuxième boucle
+    //1pt pour pour le second foreach
+    //1pt pour la construction de la liste de table data
+    //1pt pour l'utilisation de la variable temporaire $tempGUITbody
+    //1pt ajout des boutons après la deuxième boucle
 
     foreach ($arrayData as $data) {
 
