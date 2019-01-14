@@ -26,7 +26,6 @@
                     <div class="table-responsive">
                         <table id="mytable" class="table table-bordred table-striped">
                             <thead>
-                            <th><input type="checkbox" id="checkall" /></th>
                             <?php echo $GUIThead ?>
                             </thead>
                             <tbody>

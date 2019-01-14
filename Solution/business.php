@@ -33,6 +33,8 @@ function generateGUIThead($arrayTH)
     //1pt construction correct de la liste de th
     //-1pt pour l'utilisation d'un for au lieu du foreach
 
+    $tempGUIThead = '<th><input type="checkbox" id="checkall" /></th>';
+
     foreach ($arrayTH as $th) {
         $tempGUIThead = $tempGUIThead . '<th>' . $th . '</th>';
     }

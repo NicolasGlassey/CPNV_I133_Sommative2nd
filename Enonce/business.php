@@ -39,4 +39,4 @@ function generateGUITbody($arrayData)
     return $tempGUITbody;
 }
 
-require 'gabarit_doc.php';
+require 'gabarit.php';
