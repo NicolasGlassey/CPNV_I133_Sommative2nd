@@ -28,10 +28,10 @@ function generateGUIThead($arrayTH)
     //result expected = //'<th>SATELLITE</th><th>LIFETIME</th><th>POSITION</th> <th>SERVICE</th><th>CONTACT</th><th>EDIT</th><th>DELETE</th>';
 
     //Evaluation
-    //1pt pour l'utilisation correct du foreach
+    //1pt pour l'utilisation correct du foreach (pas de for)
     //1pt pour avoir utilisé la variable temporaire $tempGUIThead
     //1pt construction correct de la liste de th
-    //-1pt pour l'utilisation d'un for au lieu du foreach
+    //1pt ajout checkbox
 
     $tempGUIThead = '<th><input type="checkbox" id="checkall" /></th>';
 

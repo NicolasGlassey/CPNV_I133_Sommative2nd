@@ -24,12 +24,11 @@
                 <div class="col-md-12">
                     <h4><?php echo $GUITitle ?></h4>
                     <div class="table-responsive">
-                        <table id="mytable" class="table table-bordred table-striped">
+                        <table id="mytable" class="table table-bordered table-striped">
                             <thead>
                             <?php echo $GUIThead ?>
                             </thead>
                             <tbody>
-                            <tr>
                             <?php echo $GUITbody ?>
                             </tbody>
                         </table>

@@ -23,7 +23,7 @@ $GUITbody = generateGUITbody($arrayData);//contenu du tableau
 
 function generateGUIThead($arrayTH)
 {
-    $tempGUIThead = '<th><input type="checkbox" id="checkall" /></th>';
+    $tempGUIThead = "";
 
     //TODO
 
